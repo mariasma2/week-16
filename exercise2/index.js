@@ -3,7 +3,7 @@ const brand = document.querySelector('.brand');
 const model = document.querySelector('.model');
 const fuels = document.querySelectorAll('.inputFuels');
 const years = document.querySelectorAll('.inputYears');
-const recipient = document.querySelectorAll('.recipient');
+const drives = document.querySelectorAll('.inputDrives');
 const result = document.querySelector('.result');
 
 form.onsubmit = (evt) => {
@@ -25,9 +25,9 @@ form.onsubmit = (evt) => {
 			total = total + Number(years[i].value);
 		}
 	}
-    for (let i = 0; i < recipient.length; i++) {
-		if (recipient[i].checked) {
-			total = total + Number(recipient[i].value);
+	for (let i = 0; i < drives.length; i++) {
+		if (drives[i].checked) {
+			total = total + Number(drives[i].value);
 		}
 	}
 	result.innerHTML = `Стоимость автомобиля ${total}`;
