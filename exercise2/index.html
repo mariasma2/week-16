@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/exercise2/index.css">
+    <title>Калькулятор </title>
+</head>
+
+<body>
+    <div class="conteiner">
+    <form class="form">
+        <h1 class="name">Калькулятор стоимости</h1>
+        <fieldset>
+            <p>Выберите марку автомобиля</p>
+            <select class="brand">
+                <option value="600000">OPEL</option>
+                <option value="700000">HYUNDAI</option>
+                <option value="700000">KIA</option>
+                <option value="1200000">AUDI</option>
+                <option value="1500000">MERCEDES</option>
+                <option value="5500000">TESLA</option>
+                <option value="300000">LADA</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Выберите тип кузова</p>
+            <select class="model">
+                <option value="5000">Седан</option>
+                <option value="5000">Универсал</option>
+                <option value="5000">Хэтчбэк</option>
+                <option value="9000">Купе</option>
+                <option value="10000">Джип</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Типы топлива</p>
+            <div>
+                <label for="fuel1">
+                    <input class="inputFuels" type="radio" id="fuel1" value="20000" />
+                    <span>Бензин</span>
+                </label>
+                <label for="fuel2">
+                    <input class="inputFuels" type="radio" id="fuel2" value="30000" />
+                    <span>Дизель</span>
+                </label>
+                <label for="fuel3">
+                    <input class="inputFuels" type="radio" id="fuel3" value="60000" />
+                    <span>Электрический</span>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <p>Возраст автомобиля:</p>
+            <div>
+                <label for="year1">
+                    <input class="inputYears" type="radio" id="year1" value="50000" />
+                    <span>Новый</span>
+                </label>
+                <label for="year2">
+                    <input class="inputYears" type="radio" id="year2" value="30000" />
+                    <span>До 3 лет</span>
+                </label>
+                <label for="year3">
+                    <input class="inputYears" type="radio" id="year3" value="10000" />
+                    <span>От 3 до 6 лет </span>
+                </label>
+                <label for="year4">
+                    <input class="inputYears" type="radio" id="year4" value="5000" />
+                    <span>Старше 6 лет</span>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <p>Получатель:</p>
+            <label for="recipient1">
+                <input class="recipient" type="checkbox" id="recipient1" value="0" />
+                <span>Физическое лицо</span>
+            </label>
+            <label for="recipient2">
+                <input class="recipient" type="checkbox" id="recipient2" value="10000" />
+                <span>Юридическое лицо</span>
+            </label>
+        </fieldset>
+
+        <div>
+            <center><button type="submit" class="button_result">Рассчитать стоимость</button>
+            <p class="result"></p></center>
+        </div>
+    </form>
+</div>
+    <script src="/exercise2/index.js"></script>
+</body>
+
+</html>

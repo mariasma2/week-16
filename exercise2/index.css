@@ -1,0 +1,22 @@
+.button_result{
+    cursor: pointer;
+    padding: 10px 30px;
+    margin-top: 20px;
+    height: 50px;
+    color:rgb(136, 27, 131);
+    background: rgb(233, 253, 54);
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px rgb(122, 122, 122);
+}
+.button_result:hover{
+    opacity: .80;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:rgba(211, 211, 211) ;
+    margin:0;
+    }
